@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "sendsms",
+    "name": "Log Book",
     "slug": "sendsms",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -11,20 +11,35 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "runtimeVersion": {
+        "policy": "sdkVersion"
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.anonymous.sendsms",
+      "runtimeVersion": "1.0.0"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "13fd064d-e4fe-46d4-bb2a-7336dd3da136"
+      }
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0,
+      "enabled": true,
+      "checkAutomatically": "ON_LOAD",
+      "url": "https://u.expo.dev/13fd064d-e4fe-46d4-bb2a-7336dd3da136"
+    },
+    "runtimeVersion": "1.0.0"
   }
 }
